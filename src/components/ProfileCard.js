@@ -4,20 +4,25 @@ import { css } from "@emotion/css";
 
 const Name = styled("div")`
     font-family: 'Westwood Sans';
-    font-size: 24;
+    font-size: 32px;
     display: flex;
     align-items: flex-start;
+    padding-bottom: 2vh;
+    color: #7300CD;
 `;
 
 const Description = styled("div")`
-    font-family: 'Westwood Sans';
-    font-size: 16;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 `;
 
 const HorizontalContainer = styled("div")`
-display: flex;
-flex-direction: row;
-align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    text-align: left;
 `
 const VerticalContainer = styled("div")`
     display: flex;
@@ -30,12 +35,12 @@ const AllContainer = styled("div")`
     display: flex;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    max-width: 75%;
+    justify-content: center;
+    align-items: center;
 `;
 
 export default class ProfileCard extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <AllContainer>
@@ -43,10 +48,11 @@ export default class ProfileCard extends React.Component {
                     <div>
                         <img
                             src={this.props.pic}
+                            alt=""
                             className={css`
                       border-radius: 50%;
-                      height: 16vh;
-                      width: 16vh;
+                      height: 25vh;
+                      width: 25vh;
                     `} />
                     </div>
                     <VerticalContainer>
