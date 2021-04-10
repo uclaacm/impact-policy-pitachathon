@@ -3,15 +3,15 @@ import styled from "styled-components";
 
 const QuestionContainer = styled("div")`
     font-family: 'Westwood Sans';
-    font-size: 24;
-    display: flex;
-    align-items: flex-start;
+    font-size: 24px;
     color: #7300CD;
 `;
 
 const Answer = styled("div")`
-    font-family: 'Westwood Sans';
-    font-size: 16;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    padding-top: 1vh;
 `;
 
 const AllContainer = styled("div")`
@@ -19,12 +19,11 @@ const AllContainer = styled("div")`
     flex-direction: column;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    align-items: flex-start;
+    justify-content: flex-start;
 `
 
 export default class Question extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <AllContainer>
