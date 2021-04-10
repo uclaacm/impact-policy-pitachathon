@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import Emoji from "./Emoji";
 
 const Time = styled("div")`
     font-family: 'Westwood Sans';
-    font-size: 24;
-    display: flex;
-    align-items: flex-start;
+    font-size: 32px;
     color: #7300CD;
+    padding-bottom: 1vh;
 `;
 
 const Description = styled("div")`
-    font-family: 'Westwood Sans';
-    font-size: 16;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
 `;
 
 const AllContainer = styled("div")`
@@ -20,16 +20,13 @@ const AllContainer = styled("div")`
     flex-direction: column;
     padding-top: 2vh;
     padding-bottom: 2vh;
-`
+`;
 
 export default class Event extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <AllContainer>
-                <Time><Emoji symbol="⭐️" />{' '}{this.props.time}</Time>
+                <Time>{this.props.time}</Time>
                 <Description>{this.props.description}</Description>
             </AllContainer>
         )
