@@ -1,13 +1,11 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import { ReactRouterGlobalHistory } from "react-router-global-history";
 import Landing from "./pages/Landing";
 import Schedule from "./pages/Schedule";
 import Resources from "./pages/Resources";
 import Profiles from "./pages/Profiles";
 import FAQ from "./pages/FAQ";
-import styled from "styled-components";
 import "./App.css";
 
 function App() {

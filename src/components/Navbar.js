@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import impactLogo from "../assets/logo.svg";
+import impactLogo from "../assets/impact-logo.svg";
 
 const Container = styled("div")`
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 100%;
     flex-direction: right;
-    padding-left: 4vh;
+    padding-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
 `;
 
 const StyledLink = styled(Link)`
@@ -26,13 +30,11 @@ const StyledLink = styled(Link)`
 `;
 const DummyFiller = styled("div")`
   margin-left: auto;
-  margin-right: auto;
 `;
 
 const LinkBox = styled("div")`
   display: flex;
   align-items: center;
-  /* resize logo here */
 `;
 
 const RightLinkBox = styled(LinkBox)`
@@ -40,13 +42,30 @@ const RightLinkBox = styled(LinkBox)`
   justify-self: flex-end;
 `;
 
+const RegisterButton = styled("button")`
+    background-color: #61FFD9;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 1vh;
+    padding: 1vh 2vh;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.25s all ease;
+    &:hover{
+        cursor: pointer; 
+        padding: 1.25vh 2.5vh;
+        font-size: 22px;
+    }
+`;
+
 export default class Navbar extends React.Component {
     render() {
         return (
             <Container>
                 <LinkBox>
-                    {/* place logo here */}
-                    {/* <Link to="/"><img src={impactLogo} /></Link> */}
+                    <Link to="/"><img src={impactLogo} alt="" /></Link>
                 </LinkBox>
                 <DummyFiller />
                 <RightLinkBox>
@@ -62,7 +81,11 @@ export default class Navbar extends React.Component {
                     <StyledLink to="/FAQ">FAQ</StyledLink>
                 </RightLinkBox>
                 <RightLinkBox>
-                    <a href="https://forms.gle/Z5tZjdgthH64q9V98" class="button">Register</a>
+                    <a href="https://forms.gle/Z5tZjdgthH64q9V98" class="button">
+                        <RegisterButton>
+                            Register
+                        </RegisterButton>
+                    </a>
                 </RightLinkBox>
             </Container >
         )
