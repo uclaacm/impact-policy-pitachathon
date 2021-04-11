@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ResourceContainer = styled("div")`
     display: flex;
@@ -50,11 +51,11 @@ export default class Resources extends React.Component {
             <AllContainer>
                 <Title>Resources</Title>
                 <ResourceContainer>
-                    <a href="google.com"><ResourceButton>Data Privacy Workshop</ResourceButton></a>
-                    <a href="google.com"><ResourceButton>Sustainability Workshop</ResourceButton></a>
-                    <a href="google.com"><ResourceButton>Example Pitch Slides</ResourceButton></a>
-                    <a href="google.com"><ResourceButton>Intro Track Slides</ResourceButton></a>
-                    <a href="google.com"><ResourceButton>Rubric</ResourceButton></a>
+                    <a href="comingsoon"><ResourceButton>Data Privacy Workshop</ResourceButton></a>
+                    <a href="comingsoon"><ResourceButton>Sustainability Workshop</ResourceButton></a>
+                    <a href="comingsoon"><ResourceButton>Example Pitch Slides</ResourceButton></a>
+                    <a href="comingsoon"><ResourceButton>Intro Track Slides</ResourceButton></a>
+                    <a href="comingsoon"><ResourceButton>Rubric</ResourceButton></a> 
                 </ResourceContainer>
             </AllContainer>
         )
