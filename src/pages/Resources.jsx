@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import JudgingRubric from "../assets/judging-rubric.pdf";
 
 const ResourceContainer = styled("div")`
     display: flex;
@@ -37,7 +38,7 @@ const ResourceButton = styled("button")`
     transition: 0.25s all ease;
     font-family: 'Open Sans', sans-serif;
     &:hover{
-        cursor: pointer; 
+        cursor: pointer;
         padding: 1.25vh 2.5vh;
         font-size: 22px;
     }
@@ -55,7 +56,7 @@ export default class Resources extends React.Component {
                     <a href="comingsoon"><ResourceButton>Sustainability Workshop</ResourceButton></a>
                     <a href="comingsoon"><ResourceButton>Example Pitch Slides</ResourceButton></a>
                     <a href="comingsoon"><ResourceButton>Intro Track Slides</ResourceButton></a>
-                    <a href="comingsoon"><ResourceButton>Rubric</ResourceButton></a> 
+                    <a href={JudgingRubric} target="_blank" rel="noreferrer"><ResourceButton>Judging Rubric</ResourceButton></a>
                 </ResourceContainer>
             </AllContainer>
         )

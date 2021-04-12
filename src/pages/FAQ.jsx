@@ -33,7 +33,7 @@ export default class FAQ extends React.Component {
             <AllContainer>
                 <Title>FAQ</Title>
                 <Container>
-                    <Question question="Who can attend?" answer="Anyone attending any accredited 4-year university can attend!"></Question>
+                    <Question question="Who can attend?" answer="Anyone attending any accredited 4-year university or community college can attend!"></Question>
                     <Question question="How much does it cost to attend?" answer="Nothing! Participating in the pitchathon is completely free."></Question>
                     <Question question="Do I need to have a team to sign up?" answer="No, we will be providing asynchronous team formation the day of the event!"></Question>
                     <Question question="Do I need tech policy experience to come?" answer="NO! You don't need ANY experience in tech policy to attend the pitchathon!"></Question>

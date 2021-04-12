@@ -13,6 +13,7 @@ const Description = styled("div")`
     font-size: 16px;
     display: flex;
     align-items: flex-start;
+    padding-left: 3em;
 `;
 
 const AllContainer = styled("div")`
