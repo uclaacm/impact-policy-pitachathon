@@ -14,7 +14,7 @@ export default class ComingSoon extends React.Component {
         return(
             <div>
             <Disclaimer>This page is coming soon!</Disclaimer>
-            <img src={img1} width="20%" height="20%"/>
+            <img src={img1} width="20%" height="20%" alt="under construction logo"/>
             </div>
         )
     }
