@@ -4,7 +4,7 @@ import ProfileCard from "../components/ProfileCard.js";
 import AndrewSelbst from "../assets/andrew-selbst.jpg";
 import DustinBrown from "../assets/dustin-brown.jpg";
 import SafiyaNoble from "../assets/prof.png";
-import MichaelRyzhov from "../assets/prof.png";
+//import MichaelRyzhov from "../assets/prof.png";
 
 const Container = styled("div")`
     display: flex;
