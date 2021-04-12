@@ -51,7 +51,7 @@ export default class Resources extends React.Component {
             <AllContainer>
                 <Title>Resources</Title>
                 <ResourceContainer>
-                    //when a resource is ready, just replace 'comingsoon' with the complete URL of the resource
+                    {/* when a resource is ready, just replace 'comingsoon' with the complete URL of the resource */}
                     <a href="comingsoon"><ResourceButton>Data Privacy Workshop</ResourceButton></a>
                     <a href="comingsoon"><ResourceButton>Sustainability Workshop</ResourceButton></a>
                     <a href="comingsoon"><ResourceButton>Example Pitch Slides</ResourceButton></a>

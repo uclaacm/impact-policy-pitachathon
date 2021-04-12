@@ -82,7 +82,7 @@ export default class Navbar extends React.Component {
                     <StyledLink to="/FAQ">FAQ</StyledLink>
                 </RightLinkBox>
                 <RightLinkBox>
-                    <a href="https://forms.gle/Z5tZjdgthH64q9V98" class="button">
+                    <a href="https://forms.gle/Z5tZjdgthH64q9V98" target="_blank" rel="noopener noreferrer" class="button">
                         <RegisterButton>
                             Register
                         </RegisterButton>
