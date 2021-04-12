@@ -56,7 +56,7 @@ export default class Resources extends React.Component {
                     <a href="comingsoon"><ResourceButton>Sustainability Workshop</ResourceButton></a>
                     <a href="comingsoon"><ResourceButton>Example Pitch Slides</ResourceButton></a>
                     <a href="comingsoon"><ResourceButton>Intro Track Slides</ResourceButton></a>
-                    <a href={JudgingRubric} target="_blank"><ResourceButton>Judging Rubric</ResourceButton></a>
+                    <a href={JudgingRubric} target="_blank" rel="noreferrer"><ResourceButton>Judging Rubric</ResourceButton></a>
                 </ResourceContainer>
             </AllContainer>
         )
