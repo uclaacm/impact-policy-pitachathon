@@ -12,6 +12,7 @@ const Answer = styled("div")`
     font-size: 16px;
     display: flex;
     padding-top: 1vh;
+    text-align: left;
 `;
 
 const AllContainer = styled("div")`

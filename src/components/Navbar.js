@@ -18,7 +18,7 @@ const Container = styled("div")`
 const StyledLink = styled(Link)`
   position: relative;
   font-size: 18px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   text-decoration: none;
   transition: 0.25s all ease;
   color: black;
@@ -44,9 +44,10 @@ const RightLinkBox = styled(LinkBox)`
 
 const RegisterButton = styled("button")`
     background-color: #61FFD9;
+    font-family: 'Open Sans';
     text-decoration: none;
     border: none;
-    box-shadow: none;
+    box-shadow: 3px 2.5px 2.5px grey; /*feel free to change lol*/
     border-radius: 1vh;
     padding: 1vh 2vh;
     text-align: center;
@@ -81,7 +82,7 @@ export default class Navbar extends React.Component {
                     <StyledLink to="/FAQ">FAQ</StyledLink>
                 </RightLinkBox>
                 <RightLinkBox>
-                    <a href="https://forms.gle/Z5tZjdgthH64q9V98" class="button">
+                    <a href="https://forms.gle/Z5tZjdgthH64q9V98" target="_blank" rel="noopener noreferrer" class="button">
                         <RegisterButton>
                             Register
                         </RegisterButton>

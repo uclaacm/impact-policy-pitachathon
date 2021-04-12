@@ -6,6 +6,7 @@ import Schedule from "./pages/Schedule";
 import Resources from "./pages/Resources";
 import Profiles from "./pages/Profiles";
 import FAQ from "./pages/FAQ";
+import ComingSoon from "./pages/ComingSoon";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/FAQ">
             <FAQ />
+          </Route>
+          <Route exact path="/comingsoon">
+            <ComingSoon />
           </Route>
         </Switch>
       </Router>
