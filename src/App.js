@@ -15,23 +15,23 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/">
-            <Landing />
-          </Route>
-          <Route exact path="/schedule">
+          <Route path="/schedule">
             <Schedule />
           </Route>
-          <Route exact path="/resources">
+          <Route path="/resources">
             <Resources />
           </Route>
-          <Route exact path="/profiles">
+          <Route path="/profiles">
             <Profiles />
           </Route>
-          <Route exact path="/FAQ">
+          <Route path="/FAQ">
             <FAQ />
           </Route>
-          <Route exact path="/comingsoon">
+          <Route path="/comingsoon">
             <ComingSoon />
+          </Route>
+          <Route exact path="/"> {/*needs to be exact or it becomes default */}
+            <Landing />
           </Route>
         </Switch>
       </Router>
