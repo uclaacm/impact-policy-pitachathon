@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import banner from "../assets/banner.jpg";
+import banner from "../assets/banner.svg";
 
 const AllContainer = styled("div")`
     display: flex;
