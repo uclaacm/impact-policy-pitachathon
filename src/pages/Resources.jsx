@@ -52,11 +52,12 @@ export default class Resources extends React.Component {
                 <Title>Resources</Title>
                 <ResourceContainer>
                     {/* when a resource is ready, just replace 'comingsoon' with the complete URL of the resource */}
-                    <a href="comingsoon"><ResourceButton>Data Privacy Workshop</ResourceButton></a>
-                    <a href="comingsoon"><ResourceButton>Sustainability Workshop</ResourceButton></a>
-                    <a href="https://docs.google.com/presentation/d/18lU1LC13A3sWiKFzU3XtH7rdJwkuWJkfBg28KXSuwkk/edit?usp=sharing"><ResourceButton>Example Pitch Slides</ResourceButton></a>
-                    <a href="comingsoon"><ResourceButton>Intro Slides</ResourceButton></a>
+                    <a href="http://tinyurl.com/pitchathon-data-priv-workshop" target="_blank" rel="noreferrer"><ResourceButton>Data Privacy Workshop</ResourceButton></a>
+                    <a href="http://tinyurl.com/pitchathon-sust-tech-workshop" target="_blank" rel="noreferrer"><ResourceButton>Sustainability Workshop</ResourceButton></a>
+                    <a href="http://tinyurl.com/pitchathon-example-slides" target="_blank" rel="noreferrer"><ResourceButton>Example Pitch Slides</ResourceButton></a>
+                    <a href="http://tinyurl.com/pitchathon-example-pitch" target="_blank" rel="noreferrer"><ResourceButton>Example Pitch Recording</ResourceButton></a>
                     <a href={JudgingRubric} target="_blank" rel="noreferrer"><ResourceButton>Judging Rubric</ResourceButton></a>
+                    <a href="http://tinyurl.com/policy-pitchathon-submissions" target="_blank" rel="noreferrer"><ResourceButton>SUBMIT YOUR PITCH HERE!</ResourceButton></a>
                 </ResourceContainer>
             </AllContainer>
         )
